@@ -1,0 +1,58 @@
+AWS Artifact  -> It contains security and compliance report
+AWS Secret Manager  -> Used for authentication, not for encryption
+
+I/O throughput == instance store
+
+fanout is only supported for kinesis.
+
+DynamoDB On-Demand capacity allocation  -> For Unpredictable workload
+ByDefault DynamoDB Adaptive Capacity is turned on.
+Resource based policy is not supported for DynamoDB, ElasticCache, DAX.
+DynamoDB == AWS SDK  -> AWS SDK's for DynamoDB automatically retry requests
+
+when we change the data using write-through ElasticCache cluster, it is immidiatelty reflected (Fastest)
+
+API Gateway can connect to one or more services to refactor the architecture.
+API Gateway has limit 10k requests/sec
+NLB -> 10 million requests/sec.
+
+CloudFront cannot work with layer 4, TCP, UDP. (only http/s) 
+CloudFront  ->  For real-time and on-Demand streaming.
+AWS WAF -> Works on layer 7 (Application Layer).
+
+AWS Shield Standard -> Used for DDoS Attacks.
+
+S3 is most-cost effective that EFS.
+
+NAT Gateway -> To build redundancy.
+
+Gateway Endpoint -> Works with S3 & DynamoDB. (It is Free)
+
+On-Demand instance -> For uninterrupted solution
+
+AWS Snowball -> Does not use internet to move the data
+
+AWS DataSync -> To automate & accelerate the replication of data to AWS storage service
+
+DynamoDB, ElasticCache, RDS -> Sutable for storing session state data
+
+Way of configuring custom NAT instance -> Source/Destination check should be disabled on NAT instance
+
+You can have one Elastic IP (EIP) address associated with a running instance at no charge.
+
+How to create AMI while running instance -> Yes, if only "no reboot" option is checked
+
+UDP protocol is not used while using Route
+
+redis - support replication and automatic failover
+
+Use EC2 private IP for replication
+
+Dedicated instance is Most-Cost effective for isolation
+
+AWS Managed Microsoft AD also supports configuring a trust relationship with an existing on-premises Microsoft Active Directory
+
+AWS Firewall Manager can configure rules on the following AWS resources:
+Network Access Control Lists (NACLs)
+VPC Security Groups
+AWS WAF
